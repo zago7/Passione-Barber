@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,11 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\.gitignore",
+              "RelativeDocumentMoniker": "BluServs\\.gitignore",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\.gitignore",
+              "RelativeToolTip": "BluServs\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-23T00:22:12.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Program.cs",
               "RelativeDocumentMoniker": "BluServs\\Program.cs",
@@ -35,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\appsettings.json",
               "RelativeDocumentMoniker": "BluServs\\appsettings.json",
@@ -43,12 +64,7 @@
               "RelativeToolTip": "BluServs\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T23:57:38.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-04-22T23:57:38.374Z"
             }
           ]
         }
