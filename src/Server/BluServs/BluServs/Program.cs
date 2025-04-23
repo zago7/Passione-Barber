@@ -1,4 +1,16 @@
+using System;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//var serverVersion = new MySqlServerVersion(new Version(8, 0, 23));
+
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//options.UseMySql(connectionString, serverVersion)
+//.LogTo(Console.WriteLine, LogLevel.Information)
+//.EnableSensitiveDataLogging()
+//.EnableDetailedErrors());
+//builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
 
 // Add services to the container.
 
