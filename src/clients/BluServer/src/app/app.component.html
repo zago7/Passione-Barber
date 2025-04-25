@@ -1,4 +1,7 @@
 <nav>
-    <app-nav-bar></app-nav-bar>
+    <app-nav-bar *ngIf="showNavbar"></app-nav-bar>
 </nav>
+<main>
+<app-carrossel *ngIf="showCarrossel"></app-carrossel> 
 <router-outlet></router-outlet>
+</main>
