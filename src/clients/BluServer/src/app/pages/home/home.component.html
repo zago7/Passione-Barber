@@ -3,6 +3,11 @@
 </section>
 
 
+<nav>
+  <app-nav-bar *ngIf="showNavbar"></app-nav-bar>
+</nav>
+
+<app-carrossel *ngIf="showCarrossel"></app-carrossel>
 
 
 <!--Section Sobre com estrutura feita-->
@@ -49,7 +54,7 @@
     <h2> O que oferecemos</h2><!--Titulo principal-->
   </div>
 
-  <div id="sobre-servicos" > <!--Cards informativos médios de apresentação-->
+  <div id="Servicos"  > <!--Cards informativos médios de apresentação-->
 
     <app-card-servicos title="Corte"
       content="Levamos a barbearia clássica a um novo nível, com cortes modernos e atendimento personalizado."></app-card-servicos>
