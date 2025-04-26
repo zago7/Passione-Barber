@@ -19,6 +19,16 @@ export class CarrosselComponent implements OnInit, OnDestroy {
         src: 'assets/images/jotaro-img.png',
         titulo: 'Experiência Premium',
         descricao: 'Tenha acesso aos melhores serviços com um clique.'
+      },
+      {
+        src: 'assets/images/barbearia1.png',
+        titulo: 'Experiência Premium',
+        descricao: 'Tenha acesso aos melhores serviços com um clique.'
+      },
+      {
+        src: 'assets/images/bonorocabelo.png',
+        titulo: 'Experiência Premium',
+        descricao: 'Tenha acesso aos melhores serviços com um clique.'
       }
     ];
   
