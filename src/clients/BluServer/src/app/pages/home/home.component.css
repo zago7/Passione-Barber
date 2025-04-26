@@ -76,6 +76,8 @@ app-card-grande {
   text-align: left;
 }
 
+
+
 #sobre-servicos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
