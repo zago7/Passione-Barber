@@ -1,0 +1,36 @@
+
+.card-servico {
+    width: 200px;
+    background-color: #000000; 
+    border: 3px solid #898b0f; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover */
+  .card-servico:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #898b0f; 
+  }
+  
+  
+  .card-servico h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);/* Efeito Brilho */
+  }
+  
+  /* Texto */
+  .card-servico p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
