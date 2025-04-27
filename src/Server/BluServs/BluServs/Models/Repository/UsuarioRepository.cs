@@ -2,56 +2,62 @@
 using BluServs.Models;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
-
 
 namespace BluServs.Models.Repository
 {
     public class UsuarioRepository
     {
-        private readonly AppDbContext _appDbcontext;
+        private readonly AppDbContext _appDbContext;
 
-        public UsuarioRepository(AppDbContext appDbcontext)
+        public UsuarioRepository(AppDbContext appDbContext)
         {
-            _appDbcontext = appDbcontext;
+            _appDbContext = appDbContext;
         }
 
+        
         public async Task<List<Usuario>> Listar()
         {
-            return await _appDbcontext.Usuarios.ToListAsync();
+            return await _appDbContext.Usuarios.ToListAsync();
         }
 
+        
         public async Task<Usuario> Login(LoginRequest loginRequest)
         {
-            var usuario = await _appDbcontext.Usuarios.FirstOrDefaultAsync(u => u.Email == loginRequest.Email);
+            var usuario = await _appDbContext.Usuarios
+                .FirstOrDefaultAsync(u => u.Email == loginRequest.Email && u.Senha == loginRequest.Password);
+
             if (usuario == null)
             {
                 throw new Exception("Usuário ou senha inválidos.");
             }
+
             return usuario;
         }
+
+        
         public async Task<Usuario> BuscarPorID(int id)
         {
-            var usuario = await _appDbcontext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
+            var usuario = await _appDbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
             if (usuario == null)
-                return usuario;
+            {
+                throw new Exception("Usuário não encontrado.");
+            }
 
-            throw new Exception("Usuário não encontrado.");
-
+            return usuario;
         }
 
+ 
         public async Task<Usuario> Salvar(Usuario usuario)
         {
             try
             {
-
                 if (usuario.Id > 0)
                 {
-                    var usuarioEditar = _appDbcontext.Usuarios.FirstOrDefault(u => u.Id == usuario.Id);
+                    var usuarioEditar = await _appDbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == usuario.Id);
 
                     if (usuarioEditar == null)
                     {
-                        throw new Exception("Usuário não encontrado.");
+                        throw new Exception("Usuário não encontrado para edição.");
                     }
 
                     usuarioEditar.Nome = usuario.Nome;
@@ -60,17 +66,15 @@ namespace BluServs.Models.Repository
                 }
                 else
                 {
-                    _appDbcontext.Usuarios.Add(usuario);
+                    _appDbContext.Usuarios.Add(usuario);
                 }
 
-                await _appDbcontext.SaveChangesAsync();
-
+                await _appDbContext.SaveChangesAsync();
                 return usuario;
             }
-
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(ex.Message);
                 throw;
             }
         }
@@ -79,24 +83,22 @@ namespace BluServs.Models.Repository
         {
             try
             {
-                var usuarioExcluir = _appDbcontext.Usuarios.FirstOrDefault(u => u.Id == id);
+                var usuarioExcluir = await _appDbContext.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
 
                 if (usuarioExcluir == null)
                 {
-                    _appDbcontext.Usuarios.Remove(usuarioExcluir);
-                    await _appDbcontext.SaveChangesAsync();
-                    return true;
+                    throw new Exception("Usuário não encontrado para exclusão.");
                 }
-                throw new Exception("Usuário não encontrado.");
 
+                _appDbContext.Usuarios.Remove(usuarioExcluir);
+                await _appDbContext.SaveChangesAsync();
+                return true;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw;
             }
-            
         }
-
-
     }
 }
