@@ -82,12 +82,11 @@ app-card-grande {
 
 
 #Servicos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   padding: 5px;
 }
 
+<<<<<<< HEAD
 app-card-servicos {
   display: flex;
   justify-content: center;
@@ -96,3 +95,12 @@ app-card-servicos {
   background-size: cover; 
   background-position: center; */
 }
+=======
+.c-cards-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* espaço entre os cards */
+  padding: 20px;
+  justify-items: center;
+}
+>>>>>>> 42b0bf56745f73e85a62ec1a9095b79dae40adce

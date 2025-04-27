@@ -33,4 +33,37 @@ export class HomeComponent {
       }
     })
   }
+
+  cards = [
+    {
+      title: 'Corte',
+      content: 'Corte na tesoura ou máquina',
+      imageUrl: 'assets/images/fotoCorte2.png'
+    },
+    {
+      title: 'Barba',
+      content: 'Modelagem completa da barba',
+      imageUrl: 'assets/images/fotoBarba.png'
+    },
+    {
+      title: 'Máquina',
+      content: 'Corte rápido só na máquina',
+      imageUrl: 'assets/images/fotoMaquina.png'
+    },
+    {
+      title: 'Escova progressiva',
+      content: 'Alisamento com escova progressiva',
+      imageUrl: 'assets/images/fotoProgressiva.png'
+    },
+    {
+      title: 'Depilação com cera',
+      content: 'Depilação facial com linha ou cera',
+      imageUrl: 'assets/images/fotoDepilacao.png'
+    },
+    {
+      title: 'Acabamentos',
+      content: 'Detalhamento na régua ou navalha',
+      imageUrl: 'assets/images/fotoAcabamento.png'
+    }
+  ];  
 }

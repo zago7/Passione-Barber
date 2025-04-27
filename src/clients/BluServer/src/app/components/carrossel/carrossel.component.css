@@ -1,6 +1,6 @@
 .carrossel-container {
     width: 100%;
-    height: 400px; /* altura que você quiser */
+    height: 500px; /* altura que você quiser */
     background-color: black; /* só pra evitar espaços brancos */
     display: flex;
     align-items: center;
