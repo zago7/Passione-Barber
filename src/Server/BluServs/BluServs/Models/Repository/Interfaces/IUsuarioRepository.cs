@@ -1,4 +1,6 @@
-﻿namespace BluServs.Models.Repository.Interfaces
+﻿using BluServs.Controllers.Objects;
+
+namespace BluServs.Models.Repository.Interfaces
 {
     public interface IUsuarioRepository
     {
@@ -8,5 +10,4 @@
         Task<Usuario> Salvar(Usuario usuario);
         Task<bool> Excluir(int id);
     }
-
 }

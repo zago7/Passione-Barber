@@ -1,27 +1,28 @@
-using System;
+using BluServs.Infra.Data;
+using BluServs.Models.Repository;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//var serverVersion = new MySqlServerVersion(new Version(8, 0, 23));
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 23));
 
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//options.UseMySql(connectionString, serverVersion)
-//.LogTo(Console.WriteLine, LogLevel.Information)
-//.EnableSensitiveDataLogging()
-//.EnableDetailedErrors());
-//builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
-
-// Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, serverVersion)
+    .LogTo(Console.WriteLine, LogLevel.Information)
+    .EnableSensitiveDataLogging()
+    .EnableDetailedErrors());
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddScoped<UsuarioRepository>();
+builder.Services.AddScoped<ServicoRepository>();
+builder.Services.AddScoped<AgendamentoRepository>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -1,6 +1,6 @@
 ﻿using BluServs.Infra.Data;
+using BluServs.Controllers.Objects;
 using BluServs.Models;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BluServs.Models.Repository
@@ -24,7 +24,8 @@ namespace BluServs.Models.Repository
         public async Task<Usuario> Login(LoginRequest loginRequest)
         {
             var usuario = await _appDbContext.Usuarios
-                .FirstOrDefaultAsync(u => u.Email == loginRequest.Email && u.Senha == loginRequest.Password);
+                .FirstOrDefaultAsync(u => u.Email == loginRequest.Email && u.Senha == loginRequest.Senha);
+
 
             if (usuario == null)
             {
