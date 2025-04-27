@@ -11,9 +11,9 @@
 }
 
 #Sobre {
-  border-top: 2px solid #ffd700;
+  padding-top: 100px;
   border-bottom: 2px solid #ffd700;
-  padding: 10px 0;
+
 }
 
 #Sobre:hover {
@@ -21,6 +21,9 @@
   border-bottom-color: #ffea00;
   box-shadow: 0 0 10px #ffea00;
 }
+
+
+
 
 /* TÍTULOS */
 .sobre-header-principal h2,
