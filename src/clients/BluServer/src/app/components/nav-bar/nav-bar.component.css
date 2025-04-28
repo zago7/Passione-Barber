@@ -35,6 +35,7 @@ nav {
     /* Tiramos o hover dos links normais */
     text-shadow: none;
     color: white;
+    cursor: pointer;
   }
   
   .login-component a {
@@ -69,3 +70,5 @@ nav {
     text-decoration: underline;
     color: blue; /* ou o que combinar com seu design */
   }
+
+  
