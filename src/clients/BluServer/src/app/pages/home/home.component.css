@@ -1,7 +1,8 @@
 /* RESET GERAL */
 * {
-  background-color: black;
+  
   box-sizing: border-box;
+  background-color:  black;
 }
 
 /* SEÇÃO SOBRE */
@@ -11,6 +12,8 @@
 }
 
 #Sobre {
+  
+  border-top: 2px solid #ffd700;
   padding-top: 100px;
   border-bottom: 2px solid #ffd700;
   border-top: 2px solid #ffd700;
@@ -227,3 +230,4 @@ app-card-servicos {
   border-top: 2px solid #ffea00;
   box-shadow: 0 0 10px #ffea00;
 }
+
