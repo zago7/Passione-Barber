@@ -1,31 +1,62 @@
 ﻿using BluServs.Infra.Models;
 using BluServs.Models;
 using Microsoft.AspNetCore.Mvc;
+using BluServs.Models.Repository;
+using BluServs.Models.Repository.Interfaces;
+
 
 namespace BluServs.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
     public class ServicoController : ControllerBase
     {
-        private static List<Servico> servicos = new List<Servico>
-        {
-            new Servico { Id = 1, Nome = "Corte de Cabelo", Preco = 50.0m, Duracao = 30 },
-            new Servico { Id = 2, Nome = "Barba", Preco = 30.0m, Duracao = 20 }
-        };
+        private readonly IServicoRepository _repository;
 
-        [HttpGet]
-        public ActionResult<IEnumerable<Servico>> Get()
+        public ServicoController(IServicoRepository repository)
         {
-            return Ok(servicos);
+            _repository = repository;
         }
 
-        [HttpPost]
-        public ActionResult<Servico> Post([FromBody] Servico servico)
+        [HttpGet("api/servicos")]
+        public IActionResult GetServicos()
         {
-            servico.Id = servicos.Count + 1; // Simples geração de Id
-            servicos.Add(servico);
-            return CreatedAtAction(nameof(Get), new { id = servico.Id }, servico);
+            try
+            {
+                var servicos = _repository.Listar().Result;
+                return Ok(servicos);
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized();
+            }
+        }
+
+        [HttpPost("api/servico")]
+        public IActionResult Salvar(Servico servico)
+        {
+            try
+            {
+                var lResultSalvarServico = _repository.Salvar(servico).Result;
+                return Ok(lResultSalvarServico);
+            }
+            catch (Exception error)
+            {
+                return ValidationProblem(new ValidationProblemDetails() { Detail = error.Message });
+            }
+        }
+
+        [HttpDelete("api/servico/{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            try
+            {
+                var retorno = _repository.BuscarPorId(id).Result;
+                return Ok(retorno);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
         }
     }
 }
