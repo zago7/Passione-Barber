@@ -13,6 +13,7 @@
 #Sobre {
   padding-top: 100px;
   border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
 
 }
 
@@ -62,9 +63,7 @@ app-card {
 
 app-card-grande {
   flex: 0 0 240px;
-  /* largura mais estreita */
   height: 600px;
-  /* altura bem maior que a largura */
   padding: 30px;
   margin: 0;
   border: none;
@@ -90,9 +89,6 @@ app-card-servicos {
   display: flex;
   justify-content: center;
   gap: 5px;
-  /* background-image: url('/assets/images/bonorocabelo.png');
-  background-size: cover; 
-  background-position: center; */
 }
 
 

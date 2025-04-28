@@ -21,8 +21,7 @@ export class HomeComponent {
   showNavbar = true;
   modalAberto = false;
 
-
-
+  
   constructor(
     private router: Router,
     private modalService: ModalService
@@ -47,6 +46,7 @@ export class HomeComponent {
   fecharModal() {
     this.modalService.fecharModal();
   }
+
 
   cards = [
     {
