@@ -1,27 +1,64 @@
 ﻿using BluServs.Infra.Models;
-using BluServs.Models;
+using BluServs.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BluServs.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class AgendamentoController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AgendamentoController : ControllerBase
-    {
-        private static List<Agendamento> agendamentos = new List<Agendamento>();
+    private readonly AgendamentoRepository _agendamentoRepository;
 
-        [HttpGet]
-        public ActionResult<IEnumerable<Agendamento>> Get()
+    public AgendamentoController(AgendamentoRepository agendamentoRepository)
+    {
+        _agendamentoRepository = agendamentoRepository;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Agendamento>>> Get()
+    {
+        try
         {
+            var agendamentos = await _agendamentoRepository.Listar();
             return Ok(agendamentos);
         }
-
-        [HttpPost]
-        public ActionResult<Agendamento> Post([FromBody] Agendamento agendamento)
+        catch (Exception ex)
         {
-            agendamento.Id = agendamentos.Count + 1; 
-            agendamentos.Add(agendamento);
-            return CreatedAtAction(nameof(Get), new { id = agendamento.Id }, agendamento);
+            return BadRequest(new { mensagem = ex.Message });
+        }
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Agendamento>> Post([FromBody] Agendamento agendamento)
+    {
+        try
+        {
+            var agendamentoSalvo = await _agendamentoRepository.Salvar(agendamento);
+            return CreatedAtAction(nameof(Get), new { id = agendamentoSalvo.Id }, agendamentoSalvo);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { mensagem = ex.Message });
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> Excluir(int id)
+    {
+        try
+        {
+            var agendamentoExcluido = await _agendamentoRepository.Excluir(id);
+            if (agendamentoExcluido)
+            {
+                return Ok(new { mensagem = "Agendamento excluído com sucesso." });
+            }
+            else
+            {
+                return NotFound(new { mensagem = "Agendamento não encontrado." });
+            }
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { mensagem = ex.Message });
         }
     }
 }
