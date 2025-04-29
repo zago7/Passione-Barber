@@ -39,7 +39,7 @@
   }
   
   .horarios-grid button.selected {
-    background-color: #007bff;
+    background-color: #323537;
     color: white;
   }
   
@@ -64,4 +64,13 @@
     cursor: pointer;
     margin-top: 10px;
   }
+
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  }
   
+  .checkbox-grid label {
+    white-space: normal; /* permite quebra normal */
+    word-break: break-word; /* quebra palavra se for muito grande */
+  }

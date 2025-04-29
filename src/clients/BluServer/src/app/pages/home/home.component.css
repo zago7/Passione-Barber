@@ -17,6 +17,14 @@
   border-bottom: 1px solid rgba(255, 215, 0, 0.2); /* Linha dourada suave */
   box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15); /* Sombra dourada */
   
+<<<<<<< HEAD
+=======
+  border-top: 2px solid #ffd700;
+  padding-top: 100px;
+  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #ffd700;
+
+>>>>>>> 30fb283716768c37dddd793f390a0529aa706413
 }
 
 
@@ -61,9 +69,7 @@ app-card {
 
 app-card-grande {
   flex: 0 0 240px;
-  /* largura mais estreita */
   height: 600px;
-  /* altura bem maior que a largura */
   padding: 30px;
   margin: 0;
   border: none;
@@ -89,9 +95,6 @@ app-card-servicos {
   display: flex;
   justify-content: center;
   gap: 5px;
-  /* background-image: url('/assets/images/bonorocabelo.png');
-  background-size: cover; 
-  background-position: center; */
 }
 
 
@@ -118,7 +121,6 @@ app-card-servicos {
 .contato h2 {
   font-size: 48px;
   color: #fff;
-  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
   margin-bottom: 10px;
 }
 

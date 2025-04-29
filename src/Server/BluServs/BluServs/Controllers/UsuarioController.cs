@@ -1,5 +1,9 @@
 ﻿using BluServs.Models;
+using BluServs.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace BluServs.Controllers
 {
@@ -7,17 +11,78 @@ namespace BluServs.Controllers
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private static List<Usuario> users = new List<Usuario>
-        {
-            new Usuario {Id = 1, Nome = "Samuel", Email = "samuel@gmail.com"},
-            new Usuario {Id = 2, Nome = "Felipe", Email = "felipe@gmail.com"},
-            new Usuario {Id = 3, Nome = "Jose", Email = "jose@gmail.com"}
-        };
+        private readonly UsuarioRepository _usuarioRepository;
 
-        [HttpGet]
-        public ActionResult<IEnumerable<Usuario>> Get()
+        public UsuarioController(UsuarioRepository usuarioRepository)
         {
-            return Ok(users);
+            _usuarioRepository = usuarioRepository;
+        }
+
+        // GET: api/usuario
+        [HttpGet]
+        public async Task<ActionResult<List<Usuario>>> Listar()
+        {
+            var usuarios = await _usuarioRepository.Listar();
+            return Ok(usuarios);
+        }
+
+        // GET: api/usuario/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Usuario>> BuscarPorId(int id)
+        {
+            try
+            {
+                var usuario = await _usuarioRepository.BuscarPorID(id);
+                return Ok(usuario);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { mensagem = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Usuario>> Criar([FromBody] Usuario usuario)
+        {
+            try
+            {
+                var novoUsuario = await _usuarioRepository.Salvar(usuario);
+                return CreatedAtAction(nameof(BuscarPorId), new { id = novoUsuario.Id }, novoUsuario);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensagem = ex.Message });
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Usuario>> Atualizar(int id, [FromBody] Usuario usuario)
+        {
+            try
+            {
+                usuario.Id = id; 
+                var usuarioAtualizado = await _usuarioRepository.Salvar(usuario);
+                return Ok(usuarioAtualizado);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensagem = ex.Message });
+            }
+        }
+
+        // DELETE: api/usuario/{id}
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Excluir(int id)
+        {
+            try
+            {
+                await _usuarioRepository.Excluir(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { mensagem = ex.Message });
+            }
         }
     }
 }

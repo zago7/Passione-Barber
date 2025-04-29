@@ -22,9 +22,9 @@ export class AppComponent {
     { nome: 'Corte de cabelo', selecionado: false },
     { nome: 'Barba', selecionado: false },
     { nome: 'Máquina', selecionado: false },
+    { nome: 'Acabamento', selecionado: false },
     { nome: 'Escova progressiva', selecionado: false },
     { nome: 'Depilação com cera', selecionado: false },
-    { nome: 'Acabamento', selecionado: false }
 
   ];
 
