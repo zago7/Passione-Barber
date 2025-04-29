@@ -1,46 +1,83 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\",
+  "WorkspaceRootPath": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\objects\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\objects\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\objects\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\objects\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+=======
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\bluservs.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\bluservs.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\objects\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\objects\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\objects\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\objects\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\julio\\onedrive\\documentos\\angular\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,14 +87,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
+=======
+          "SelectedChildIndex": 0,
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicoController.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\ServicoController.cs",
+              "RelativeDocumentMoniker": "BluServs\\Controllers\\ServicoController.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\ServicoController.cs",
+              "RelativeToolTip": "BluServs\\Controllers\\ServicoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:40:59.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Agendamento.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
+              "RelativeDocumentMoniker": "BluServs\\Models\\Agendamento.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
+              "RelativeToolTip": "BluServs\\Models\\Agendamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:37:37.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BluServs\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\appsettings.Development.json",
+              "RelativeToolTip": "BluServs\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T23:17:36.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BluServs.http",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.http",
+              "RelativeDocumentMoniker": "BluServs\\BluServs.http",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.http",
+              "RelativeToolTip": "BluServs\\BluServs.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-28T23:37:15.95Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AuthController.cs",
@@ -65,12 +159,61 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AuthController.cs",
               "RelativeToolTip": "BluServs\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBoAAAAjAAAAAAAAAA==",
+=======
+              "DocumentIndex": 8,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "BluServs\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "BluServs\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:29:25.838Z",
+              "WhenOpened": "2025-04-28T22:29:48.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "BluServs\\Models\\Repository\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\UsuarioRepository.cs",
+              "RelativeToolTip": "BluServs\\Models\\Repository\\UsuarioRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:20:43.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Infra\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BluServs\\Infra\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Infra\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BluServs\\Infra\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T00:49:49.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\.gitignore",
+              "RelativeDocumentMoniker": "BluServs\\.gitignore",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\.gitignore",
+              "RelativeToolTip": "BluServs\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-23T00:22:12.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\Objects\\LoginResponse.cs",
@@ -120,12 +263,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\appsettings.json",
+              "RelativeDocumentMoniker": "BluServs\\appsettings.json",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\appsettings.json",
+              "RelativeToolTip": "BluServs\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T23:57:38.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Program.cs",
+              "RelativeDocumentMoniker": "BluServs\\Program.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Program.cs",
+              "RelativeToolTip": "BluServs\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T00:10:30.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "BluServs\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\HomeController.cs",
               "RelativeToolTip": "BluServs\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T00:29:17.384Z"
             },
@@ -144,6 +316,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\Interfaces\\IUsuarioRepository.cs",
@@ -177,6 +350,57 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-23T00:10:30.524Z"
+=======
+              "DocumentIndex": 11,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\Objects\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "BluServs\\Controllers\\Objects\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\Objects\\LoginRequest.cs",
+              "RelativeToolTip": "BluServs\\Controllers\\Objects\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:24:29.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\Objects\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BluServs\\Controllers\\Objects\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\Objects\\LoginResponse.cs",
+              "RelativeToolTip": "BluServs\\Controllers\\Objects\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:26:21.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "BluServs\\Models\\Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "BluServs\\Models\\Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:27:59.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BluServs\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BluServs\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T17:29:25.838Z",
+              "EditorCaption": ""
+>>>>>>> adf64978f29f5d73c90579620ccbd94782373d26
             }
           ]
         }
