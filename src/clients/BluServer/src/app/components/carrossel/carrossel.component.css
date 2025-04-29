@@ -7,8 +7,8 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
-    margin-top: 300px;
-    margin-bottom: 200px;
+    margin-top: 80px;
+    margin-bottom: 100px;
     
   }
   
@@ -55,7 +55,7 @@
   }
   
   .botao-vermelho {
-    background: #e62739;
+    background: #e1c002;
     color: white;
     padding: 12px 24px;
     border: none;

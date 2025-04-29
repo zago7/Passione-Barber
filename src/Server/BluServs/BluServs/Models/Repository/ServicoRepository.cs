@@ -1,10 +1,10 @@
-﻿using BluServs.Infra.Data;
-using BluServs.Models;
+﻿using BluServs.Models.Repository.Interfaces;  
+using BluServs.Infra.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BluServs.Models.Repository
 {
-    public class ServicoRepository
+    public class ServicoRepository : IServicoRepository  
     {
         private readonly AppDbContext _appDbContext;
 
@@ -13,15 +13,12 @@ namespace BluServs.Models.Repository
             _appDbContext = appDbContext;
         }
 
-      
         public async Task<List<Servico>> Listar()
         {
-            return await _appDbContext.Servicos
-                .ToListAsync();
+            return await _appDbContext.Servicos.ToListAsync();
         }
 
-       
-        public async Task<Servico> BuscarPorID(int id)
+        public async Task<Servico> BuscarPorId(int id)
         {
             var servico = await _appDbContext.Servicos
                 .Include(s => s.Agendamentos)
@@ -35,14 +32,14 @@ namespace BluServs.Models.Repository
             return servico;
         }
 
-     
         public async Task<Servico> Salvar(Servico servico)
         {
             try
             {
                 if (servico.Id > 0)
                 {
-                    var servicoEditar = await _appDbContext.Servicos.FirstOrDefaultAsync(s => s.Id == servico.Id);
+                    var servicoEditar = await _appDbContext.Servicos
+                        .FirstOrDefaultAsync(s => s.Id == servico.Id);
 
                     if (servicoEditar == null)
                     {
@@ -68,12 +65,12 @@ namespace BluServs.Models.Repository
             }
         }
 
-     
         public async Task<bool> Excluir(int id)
         {
             try
             {
-                var servicoExcluir = await _appDbContext.Servicos.FirstOrDefaultAsync(s => s.Id == id);
+                var servicoExcluir = await _appDbContext.Servicos
+                    .FirstOrDefaultAsync(s => s.Id == id);
 
                 if (servicoExcluir == null)
                 {

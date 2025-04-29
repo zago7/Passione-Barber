@@ -42,10 +42,10 @@ export class AppComponent {
 
   gerarHorarios() {
     const horarios: string[] = [];
-    let hora = 8; // Começa às 8h00
+    let hora = 8;
     let minuto = 0;
 
-    while (hora < 18) { // Termina às 18h00
+    while (hora < 18) {
       const horaFormatada = `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}`;
       horarios.push(horaFormatada);
 
