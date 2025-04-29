@@ -6,33 +6,47 @@ import { CardServicosComponent } from "../../components/card-servicos/card-servi
 import { CarrosselComponent } from "../../components/carrossel/carrossel.component";
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ModalService } from '../../Services/modal/modal.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavBarComponent, CardComponent, CardGrandeComponent, CardServicosComponent, CarrosselComponent,CommonModule,RouterOutlet],
+  imports: [NavBarComponent, CardComponent, CardGrandeComponent, CardServicosComponent, CarrosselComponent, CommonModule, RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
- showCarrossel = true;
+  showCarrossel = true;
   showNavbar = true;
+  modalAberto = false;
 
-
-  constructor(private router: Router){
+  
+  constructor(
+    private router: Router,
+    private modalService: ModalService
+  ) {
     this.router.events.subscribe(event => {
-      if(event instanceof NavigationEnd){
-        if(event.url === '/login'){
+      if (event instanceof NavigationEnd) {
+        if (event.url === '/login') {
           this.showCarrossel = false;
-           this.showNavbar = false;
+          this.showNavbar = false;
         } else {
           this.showCarrossel = true;
           this.showNavbar = true;
         }
       }
-    })
+    });
+  
+    this.modalService.modalAberto$.subscribe(aberto => {
+      this.modalAberto = aberto;
+    });
   }
+
+  fecharModal() {
+    this.modalService.fecharModal();
+  }
+
 
   cards = [
     {
@@ -65,5 +79,5 @@ export class HomeComponent {
       content: 'Detalhamento na régua ou navalha',
       imageUrl: 'assets/images/fotoAcabamento.png'
     }
-  ];  
+  ];
 }
