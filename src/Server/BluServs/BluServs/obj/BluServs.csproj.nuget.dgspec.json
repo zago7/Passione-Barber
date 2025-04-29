@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj": {}
+    "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj",
         "projectName": "BluServs",
-        "projectPath": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj",
-        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\OneDrive\\Documentos\\Angular\\BluServs\\src\\Server\\BluServs\\BluServs\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\BluServs\\src\\Server\\BluServs\\BluServs\\BluServs.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\BluServs\\src\\Server\\BluServs\\BluServs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
