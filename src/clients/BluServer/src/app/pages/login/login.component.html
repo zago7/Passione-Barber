@@ -1,14 +1,17 @@
 <div class="container">
     <h2>Login</h2>
-    <form #form="ngForm" (submit)="login(form)">
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" [(ngModel)]="email" required />
-        </div>
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" [(ngModel)]="senha" required />
-        </div>
-        <button type="submit">Entrar</button>
+    <form #form="ngForm" (ngSubmit)="login()">
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" [(ngModel)]="email" required />
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" [(ngModel)]="senha" required />
+      </div>
+      <button type="submit" [disabled]="form.invalid">Entrar</button>
     </form>
-</div>
+  
+    <p>Não possui conta? <a href="/cadastro">Cadastre-se aqui</a></p>
+  </div>
+  

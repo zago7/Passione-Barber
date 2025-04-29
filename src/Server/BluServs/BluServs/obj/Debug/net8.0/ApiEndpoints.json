@@ -1,6 +1,10 @@
 [
   {
+<<<<<<< HEAD
+    "ContainingType": "BluServs.Controllers.AgendamentoController",
+=======
     "ContainingType": "AgendamentoController",
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "Method": "Get",
     "RelativePath": "api/Agendamento",
     "HttpMethod": "GET",
@@ -20,7 +24,11 @@
     ]
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "BluServs.Controllers.AgendamentoController",
+=======
     "ContainingType": "AgendamentoController",
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "Method": "Post",
     "RelativePath": "api/Agendamento",
     "HttpMethod": "POST",
@@ -46,6 +54,8 @@
     ]
   },
   {
+<<<<<<< HEAD
+=======
     "ContainingType": "AgendamentoController",
     "Method": "Excluir",
     "RelativePath": "api/Agendamento/{id}",
@@ -62,6 +72,7 @@
     "ReturnTypes": []
   },
   {
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "ContainingType": "BluServs.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -88,6 +99,11 @@
     ]
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "BluServs.Controllers.ServicoController",
+    "Method": "Salvar",
+    "RelativePath": "api/servico",
+=======
     "ContainingType": "ServicoController",
     "Method": "GetServicos",
     "RelativePath": "api/Servico",
@@ -101,6 +117,7 @@
     "ContainingType": "ServicoController",
     "Method": "Salvar",
     "RelativePath": "api/Servico",
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -114,9 +131,15 @@
     "ReturnTypes": []
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "BluServs.Controllers.ServicoController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/servico/{id}",
+=======
     "ContainingType": "ServicoController",
     "Method": "Excluir",
     "RelativePath": "api/Servico/{id}",
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -130,6 +153,19 @@
     "ReturnTypes": []
   },
   {
+<<<<<<< HEAD
+    "ContainingType": "BluServs.Controllers.ServicoController",
+    "Method": "GetServicos",
+    "RelativePath": "api/servicos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+=======
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
     "ContainingType": "BluServs.Controllers.UsuarioController",
     "Method": "Listar",
     "RelativePath": "api/Usuario",
@@ -247,5 +283,34 @@
       }
     ],
     "ReturnTypes": []
+<<<<<<< HEAD
+  },
+  {
+    "ContainingType": "BluServs.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "BluServs.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BluServs.Models.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+=======
+>>>>>>> 4f88f4de4e3572fd0645fa671708a86f96ea40f1
   }
 ]

@@ -84,5 +84,21 @@ namespace BluServs.Controllers
                 return NotFound(new { mensagem = ex.Message });
             }
         }
+
+
+        [HttpPost("login")]
+        public async Task<ActionResult<Usuario>> Login([FromBody] Usuario loginData)
+        {
+            var usuarios = await _usuarioRepository.Listar();
+            var usuario = usuarios.FirstOrDefault(u => u.Email == loginData.Email && u.Senha == loginData.Senha);
+
+            if (usuario == null)
+            {
+                return Unauthorized(new { mensagem = "Email ou senha inválidos." });
+            }
+
+            return Ok(usuario);
+        }
+
     }
 }
