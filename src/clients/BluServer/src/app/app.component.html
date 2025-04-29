@@ -10,10 +10,12 @@
             <!-- Seção: Serviços -->
             <div class="form-section">
               <h3>Serviço</h3>
-              <label *ngFor="let servico of servicos">
-                <input type="checkbox" [(ngModel)]="servico.selecionado" name="servico-{{servico.nome}}">
-                {{ servico.nome }}
-              </label>
+              <div class="checkbox-grid">
+                <label *ngFor="let servico of servicos">
+                  <input type="checkbox" [(ngModel)]="servico.selecionado" name="servico-{{servico.nome}}">
+                  {{ servico.nome }}
+                </label>
+              </div>
             </div>
       
             <!-- Seção: Data -->

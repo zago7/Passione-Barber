@@ -1,75 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
 nav {
-    width: 100%;
-    height:100px;
-    background-color: #000;
-    padding: 20px 0;
-    overflow-x: hidden;
-    border-bottom: 2px solid  #ffd700;
-  }
-  
-  .navbar-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 40px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    margin: 0 auto;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4rem;
-    padding: 12px;
-  }
-  
-  .nav-links a:hover {
-    /* Tiramos o hover dos links normais */
-    text-shadow: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .login-component a {
-    background-color: #000;
-    color: white;
-    padding: 8px 16px;
-    border: 2px solid white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .login-component a:hover {
-    background-color: white;
-    color: #000;
-    box-shadow: 0 0 10px white;
-  }
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  backdrop-filter: blur(8px); /* Efeito vidro */
+  -webkit-backdrop-filter: blur(8px);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2); /* Linha dourada suave */
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15); /* Sombra dourada */
+}
 
-  .logo-fixada {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 130px;
+/* Logo */
+.logo-fixada {
+  width: 90px;
+  height: 90px;
+  transition: transform 0.4s ease;
+
+}
+
+.logo-fixada:hover {
+  transform: scale(1.1);
+}
+
+/* Container Navbar */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700, #ffcc00);
+  bottom: -5px;
+  left: -100%;
+  transition: left 0.4s ease;
+}
+
+.nav-links a:hover::before {
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Botão de Login */
+.login-component a {
+  padding: 8px 20px;
+  border: 2px solid #FFD700;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #FFD700;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.login-component a:hover {
+  background: linear-gradient(90deg, #FFD700, #ffcc00);
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
     height: auto;
-    z-index: 10;
-  }
-  
-  
-  .fake-link {
-    cursor: pointer;
-    text-decoration: underline;
-    color: blue; /* ou o que combinar com seu design */
+    padding: 15px 20px;
   }
 
-  
+  .navbar-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .login-component a {
+    width: 100%;
+    text-align: center;
+  }
+}
