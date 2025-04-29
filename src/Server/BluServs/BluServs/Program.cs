@@ -1,5 +1,6 @@
 using BluServs.Infra.Data;
 using BluServs.Models.Repository;
+using BluServs.Models.Repository.Interfaces; 
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +15,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     .EnableDetailedErrors());
 
 builder.Services.AddControllers();
+
+// Registre a interface IServicoRepository com a implementação ServicoRepository
+builder.Services.AddScoped<IServicoRepository, ServicoRepository>();
 builder.Services.AddScoped<UsuarioRepository>();
-builder.Services.AddScoped<ServicoRepository>();
 builder.Services.AddScoped<AgendamentoRepository>();
 
 builder.Services.AddEndpointsApiExplorer();

@@ -1,62 +1,64 @@
-﻿using BluServs.Infra.Models;
+﻿using BluServs.Models.Repository.Interfaces;
 using BluServs.Models;
 using Microsoft.AspNetCore.Mvc;
-using BluServs.Models.Repository;
-using BluServs.Models.Repository.Interfaces;
 
-
-namespace BluServs.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class ServicoController : ControllerBase
 {
-    [ApiController]
-    public class ServicoController : ControllerBase
+    private readonly IServicoRepository _repository;
+
+    public ServicoController(IServicoRepository repository)
     {
-        private readonly IServicoRepository _repository;
+        _repository = repository;
+    }
 
-        public ServicoController(IServicoRepository repository)
+    [HttpGet]
+    public IActionResult GetServicos()
+    {
+        try
         {
-            _repository = repository;
+            var servicos = _repository.Listar().Result;
+            return Ok(servicos);
         }
-
-        [HttpGet("api/servicos")]
-        public IActionResult GetServicos()
+        catch (Exception ex)
         {
-            try
+            return Unauthorized(new { mensagem = ex.Message });
+        }
+    }
+
+    [HttpPost]
+    public IActionResult Salvar(Servico servico)
+    {
+        try
+        {
+            var servicoSalvo = _repository.Salvar(servico).Result;
+            return Ok(servicoSalvo);
+        }
+        catch (Exception ex)
+        {
+            return ValidationProblem(new ValidationProblemDetails() { Detail = ex.Message });
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Excluir(int id)
+    {
+        try
+        {
+            var servicoExcluido = _repository.Excluir(id).Result;
+            if (servicoExcluido)
             {
-                var servicos = _repository.Listar().Result;
-                return Ok(servicos);
+                return Ok(new { mensagem = "Serviço excluído com sucesso." });
             }
-            catch (Exception ex)
+            else
             {
-                return Unauthorized();
+                return NotFound(new { mensagem = "Serviço não encontrado para exclusão." });
             }
         }
-
-        [HttpPost("api/servico")]
-        public IActionResult Salvar(Servico servico)
+        catch (Exception ex)
         {
-            try
-            {
-                var lResultSalvarServico = _repository.Salvar(servico).Result;
-                return Ok(lResultSalvarServico);
-            }
-            catch (Exception error)
-            {
-                return ValidationProblem(new ValidationProblemDetails() { Detail = error.Message });
-            }
-        }
-
-        [HttpDelete("api/servico/{id}")]
-        public IActionResult BuscarPorId(int id)
-        {
-            try
-            {
-                var retorno = _repository.BuscarPorId(id).Result;
-                return Ok(retorno);
-            }
-            catch (Exception e)
-            {
-                return NotFound(e.Message);
-            }
+            return BadRequest(new { mensagem = ex.Message });
         }
     }
 }
