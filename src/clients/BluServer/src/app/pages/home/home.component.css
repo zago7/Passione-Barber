@@ -12,18 +12,14 @@
 }
 
 #Sobre {
+
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2); /* Linha dourada suave */
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15); /* Sombra dourada */
   
-  border-top: 2px solid #ffd700;
-  padding-top: 100px;
-  border-bottom: 2px solid #ffd700;
-
 }
 
-#Sobre:hover {
-  border-top-color: #ffea00;
-  border-bottom-color: #ffea00;
-  box-shadow: 0 0 10px #ffea00;
-}
+
 
 
 
@@ -231,7 +227,7 @@ app-card-servicos {
 }
 
 #Contatos{
-  border-top: 2px solid #ffea00;
-  box-shadow: 0 0 10px #ffea00;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2); /* Linha dourada suave */
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15); /* Sombra dourada */
 }
 
