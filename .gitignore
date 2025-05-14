@@ -1,10 +1,10 @@
-src/Server/BluServs/.vs/BluServs/FileContentIndex/4a8161be-d48a-42e5-97f9-65893cf48413.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/5e3960f5-6211-43d6-b497-8b5de4fcf288.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/7ab303dd-b679-4114-981a-69e530fc5a41.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/39b00697-c628-4ac5-8bd4-ded267555fde.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/2713db03-c63e-43b0-943d-feb23cc2b72e.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/9657c588-8e92-4255-9dd5-0e43d33c2ea2.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/16740ae7-3756-4d28-87b6-bfe6e50aeb8b.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/422683d4-29fa-4bec-bf9b-a0c66685f0e7.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/d4b2b9a9-c709-443a-b993-c77e2f132e84.vsidx
-src/Server/BluServs/.vs/BluServs/FileContentIndex/ef86402b-adda-42ed-93d2-a91877e8162b.vsidx
+# Arquivos de configuração do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Pastas de build
+bin/
+obj/
