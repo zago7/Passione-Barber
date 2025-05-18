@@ -1,0 +1,7 @@
+<aside class="menu-lateral">
+  <ul>
+    <li (click)="selecionar('informacoes')" [class.ativo]="opcaoAtiva === 'informacoes'">Minhas informações</li>
+    <li (click)="selecionar('agendamentos')" [class.ativo]="opcaoAtiva === 'agendamentos'">Meus agendamentos</li>
+    <li class="voltar-btn" (click)="selecionar('voltar')">Voltar</li>
+  </ul>
+</aside>

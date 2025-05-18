@@ -1,25 +1,50 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
+import { tap } from 'rxjs/operators';
+
 
 @Injectable({
     providedIn: 'root'
 })
 
-export class AuthService{
-    private apiUrl = 'http://localhost:5129/api/Usuario' //Url do backend do projeto
+export class AuthService {
+    private cadastroUrl = 'http://localhost:5129/api/usuario';
+    private loginUrl = 'http://localhost:5129/api/Auth';
+    private usuarioId: number | null = null;
 
-    constructor(private http: HttpClient){}
+    constructor(private http: HttpClient) {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            const storedId = localStorage.getItem('userId');
+            this.usuarioId = storedId ? Number(storedId) : null;
+        } else {
+            this.usuarioId = null;
+        }
+    }
 
-    //Função login
+    getUsuarioId(): number | null {
+        return this.usuarioId;
+    }
+
+    getUsuarioPorId(id: number): Observable<any> {
+  return this.http.get<any>(`http://localhost:5129/api/usuario/${id}`);
+}
+
     login(email: string, senha: string): Observable<any> {
-        return this.http.post(`${this.apiUrl}/login`, { email, senha });
-      }
-      
-    
+        return this.http.post<{ id: number, nome: string, email: string }>(`${this.loginUrl}/login`, { email, senha })
+            .pipe(
+                tap(response => {
+                    this.usuarioId = response.id;
+                    localStorage.setItem('userId', String(response.id));
+                })
+            );
+    }
 
-    //Função cadastro
-    cadastro(nome:string , email : string, senha: string): Observable<any>{
-        return this.http.post(`${this.apiUrl}`, { nome, email, senha });
+    logout() {
+        localStorage.removeItem('usuarioId'); // ou o que você estiver salvando
+    }
+
+    cadastro(nome: string, email: string, senha: string): Observable<any> {
+        return this.http.post(this.cadastroUrl, { nome, email, senha });
     }
 }

@@ -1,0 +1,45 @@
+.perfil-container {
+  display: flex;
+  height: 100vh;
+}
+
+.perfil-menu {
+  width: 220px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-right: 2px solid yellow;
+}
+
+.perfil-menu h3 {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.perfil-menu h3:hover,
+.perfil-menu h3.ativo {
+  color: yellow;
+}
+
+.voltar-btn {
+  margin-top: 40px;
+  background-color: transparent;
+  border: 1px solid yellow;
+  color: yellow;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.layout-perfil {
+  display: flex;
+  height: 100vh;
+  background-color: #121212; /* fundo escuro para combinar */
+  color: white;
+}
+
+.conteudo-perfil {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}

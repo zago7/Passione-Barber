@@ -9,8 +9,25 @@
       <a (click)="abrirAgendamento()">Agendar</a>
     </div>
 
-    <div class="login-component">
-      <a href="/login">Login</a>
+    <div class="login-component" *ngIf="usuarioLogado">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="abrirPerfil()">
+          <mat-icon>person</mat-icon>
+          <span>Ver Perfil</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>Sair</span>
+        </button>
+      </mat-menu>
+    </div>
+
+    <div class="login-component" *ngIf="!usuarioLogado">
+      <a (click)="abrirLogin()">Login</a>
     </div>
   </div>
 </nav>

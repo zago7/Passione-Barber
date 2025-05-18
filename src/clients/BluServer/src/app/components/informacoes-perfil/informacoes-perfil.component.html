@@ -1,0 +1,9 @@
+<div *ngIf="usuario; else carregando" class="info-container">
+  <h2>Minhas Informações</h2>
+  <p><strong>Nome:</strong> {{ usuario.nome }}</p>
+  <p><strong>Email:</strong> {{ usuario.email }}</p>
+</div>
+
+<ng-template #carregando>
+  <p>Carregando informações do usuário...</p>
+</ng-template>

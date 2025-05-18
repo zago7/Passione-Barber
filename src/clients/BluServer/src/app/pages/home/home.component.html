@@ -6,6 +6,7 @@
 <nav>
   <app-nav-bar *ngIf="showNavbar"></app-nav-bar>
 </nav>
+<app-modal *ngIf="modalAberto" (click)="fecharModal()"></app-modal>
 
 <app-carrossel *ngIf="showCarrossel"></app-carrossel>
 
@@ -54,12 +55,8 @@
   </div>
 
   <div class="c-cards-servicos">
-    <app-card-servicos
-      *ngFor="let card of cards"
-      [title]="card.title"
-      [content]="card.content"
-      [imageUrl]="card.imageUrl"
-    ></app-card-servicos>
+    <app-card-servicos *ngFor="let card of cards" [title]="card.title" [content]="card.content"
+      [imageUrl]="card.imageUrl"></app-card-servicos>
   </div>
 </section>
 
@@ -70,12 +67,12 @@
 
     <div class="contato-conteudo">
       <form action="enviar.php" method="post" class="formulario-contato">
-      <input type="text" name="nome" placeholder="Seu Nome" required>
-      <input type="tel" name="telefone" placeholder="Digite seu Telefone" required>
-      <input type="text" name="email" placeholder="Digite seu email" required>
-      <textarea name="mensage" placeholder="Digite sua mensage" required></textarea>
-      <button >Enviar Mensagem</button>
-    </form>
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="tel" name="telefone" placeholder="Digite seu Telefone" required>
+        <input type="text" name="email" placeholder="Digite seu email" required>
+        <textarea name="mensage" placeholder="Digite sua mensage" required></textarea>
+        <button>Enviar Mensagem</button>
+      </form>
 
       <div class="info-contato">
         <h3>Informações</h3>
@@ -91,8 +88,8 @@
       </div>
     </div>
 
-      <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?..."></iframe>
-      </div>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    </div>
   </div>
 </section>

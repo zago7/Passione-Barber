@@ -1,0 +1,11 @@
+<div class="layout-perfil">
+  <app-menu-lateral (opcaoSelecionada)="exibirSecao($event)"></app-menu-lateral>
+
+  <div class="conteudo-perfil">
+    <ng-container [ngSwitch]="secaoAtual">
+      <app-informacoes-perfil *ngSwitchCase="'informacoes'"></app-informacoes-perfil>
+      <app-agendamentos-perfil *ngSwitchCase="'agendamentos'"></app-agendamentos-perfil>
+      <p *ngSwitchCase="'voltar'" (click)="voltar()">Voltando...</p>
+    </ng-container>
+  </div>
+</div>

@@ -15,6 +15,4 @@ export class ModalService {
   fecharModal() {
     this.modalAbertoSource.next(false);
   }
-
-  
 }

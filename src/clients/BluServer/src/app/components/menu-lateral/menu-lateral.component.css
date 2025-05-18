@@ -1,0 +1,44 @@
+.menu-lateral {
+  width: 220px;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-right: 2px solid yellow;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-lateral li {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  user-select: none;
+}
+
+.menu-lateral li:hover,
+.menu-lateral li.ativo {
+  color: yellow;
+}
+
+/* Botão "Voltar" estilizado como botão */
+.menu-lateral li.voltar-btn {
+  margin-top: auto;
+  padding: 8px 12px;
+  border: 1px solid yellow;
+  color: yellow;
+  background-color: transparent;
+  border-radius: 4px;
+  text-align: center;
+}

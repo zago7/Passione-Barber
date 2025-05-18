@@ -6,14 +6,15 @@ import { CardServicosComponent } from "../../components/card-servicos/card-servi
 import { CarrosselComponent } from "../../components/carrossel/carrossel.component";
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ModalService } from '../../Services/modal/modal.component';
+import { ModalService } from '../../Services/modal.service';
+import { ModalComponent } from '../../components/modal/modal.component';
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavBarComponent, CardComponent, CardGrandeComponent, CardServicosComponent, CarrosselComponent, CommonModule, RouterOutlet],
+  imports: [NavBarComponent, CardComponent, CardGrandeComponent, CardServicosComponent, CarrosselComponent, CommonModule, RouterOutlet, ModalComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
