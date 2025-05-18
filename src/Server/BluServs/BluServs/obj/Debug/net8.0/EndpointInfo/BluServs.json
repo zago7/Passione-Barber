@@ -5,10 +5,21 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Agendamento": {
+    "/api/Agendamento/{usuarioId}": {
       "get": {
         "tags": [
           "Agendamento"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -41,7 +52,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/api/Agendamento/multiplos": {
       "post": {
         "tags": [
           "Agendamento"
@@ -50,41 +63,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Agendamento"
+                "$ref": "#/components/schemas/AgendamentoMultiploDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Agendamento"
+                "$ref": "#/components/schemas/AgendamentoMultiploDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Agendamento"
+                "$ref": "#/components/schemas/AgendamentoMultiploDto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Agendamento"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Agendamento"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Agendamento"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -501,6 +497,28 @@
           },
           "servico": {
             "$ref": "#/components/schemas/Servico"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AgendamentoMultiploDto": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "servicoIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "dataHora": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
