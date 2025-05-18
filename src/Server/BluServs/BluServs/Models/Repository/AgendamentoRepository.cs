@@ -13,16 +13,17 @@ namespace BluServs.Models.Repository
             _appDbContext = appDbContext;
         }
 
-     
-        public async Task<List<Agendamento>> Listar()
+
+        public async Task<List<Agendamento>> ListarPorUsuario(int usuarioId)
         {
             return await _appDbContext.Agendamentos
                 .Include(a => a.Usuario)
                 .Include(a => a.Servico)
+                .Where(a => a.UsuarioId == usuarioId)
                 .ToListAsync();
         }
 
-      
+
         public async Task<Agendamento> BuscarPorID(int id)
         {
             var agendamento = await _appDbContext.Agendamentos
