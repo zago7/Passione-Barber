@@ -54,8 +54,8 @@ namespace BluServs.Models.Repository
                     }
 
                     agendamentoEditar.DataHora = agendamento.DataHora;
-                    agendamentoEditar.UsuarioId = agendamento.UsuarioId;
-                    agendamentoEditar.ServicoId = agendamento.ServicoId;
+                    agendamentoEditar.Usuario = agendamento.Usuario;
+                    agendamentoEditar.Servico = agendamento.Servico;
                 }
                 else
                 {
