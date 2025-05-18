@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BluServs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40a5b1fbef02ffeeab9d52c48d4da987ae906e84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22d6615572bdd7011b6d1b23cab04308b47dfb4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BluServs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BluServs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
