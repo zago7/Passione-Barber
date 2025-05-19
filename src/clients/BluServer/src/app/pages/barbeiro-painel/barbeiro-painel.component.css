@@ -1,0 +1,48 @@
+
+body {
+    background-color: #121212; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #eee; 
+}
+
+/* Header */
+header {
+    background-color: #1E1E1E;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+/* Título */
+h1 {
+    color: #80CBC4; 
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 10px 0;
+}
+
+nav li {
+    font-size: 18px;
+    color: #eee;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #80CBC4; /* verde água */
+    color: #121212; /* texto escuro no hover */
+}
