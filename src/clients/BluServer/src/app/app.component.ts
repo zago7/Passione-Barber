@@ -4,6 +4,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { CarrosselComponent } from './components/carrossel/carrossel.component';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from './Services/auth.service';
 
 @Component({
   selector: 'app-root',
