@@ -5,6 +5,8 @@
         <p><strong>Data:</strong> {{ agendamento.dataHora | date:'dd/MM/yyyy' }}</p>
         <p><strong>Horário:</strong> {{ agendamento.dataHora | date:'shortTime' }}</p>
 
+        <button (click)="excluirAgendamento(agendamento.id)">Excluir</button>
+
     </div>
 </div>
 

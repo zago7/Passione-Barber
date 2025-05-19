@@ -7,7 +7,7 @@
 }
 
 .agendamento-card {
-  background-color: #ffc107; /* Amarelo */
+  background-color: #fffffe; /* Amarelo */
   color: #000; /* Texto preto para contraste */
   padding: 15px 20px;
   border-radius: 10px;
@@ -16,8 +16,28 @@
   max-width: 100%;
   font-size: 16px;
 }
+.agendamento-card:hover {
+  transform: scale(1.01);
+}
+
 
 .titulo {
   align-items: center;
   color: white;
+}
+
+.agendamento-card button {
+  background-color: #dc3545; /* Vermelho para deletar */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.agendamento-card button:hover {
+  background-color: #c82333; /* Vermelho mais escuro no hover */
 }
