@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\",
+  "WorkspaceRootPath": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\servicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\models\\repository\\servicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\servicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\models\\repository\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\models\\repository\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\repository\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\dtos\\agendamentomultiplodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\dtos\\agendamentomultiplodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\dtos\\agendamentomultiplodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\models\\agendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\user\\source\\repos\\bluservs\\src\\server\\bluservs\\bluservs\\dtos\\agendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|c:\\users\\joaog\\onedrive\\documents\\workspaces\\passione-barber\\src\\server\\bluservs\\bluservs\\dtos\\agendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5C4F6C-CA17-4294-A4BE-B1C17D35A09D}|BluServs\\BluServs.csproj|solutionrelative:bluservs\\dtos\\agendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,19 +38,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\appsettings.json",
+              "RelativeDocumentMoniker": "BluServs\\appsettings.json",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\appsettings.json",
+              "RelativeToolTip": "BluServs\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T18:32:14.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ServicoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\ServicoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\ServicoRepository.cs",
               "RelativeDocumentMoniker": "BluServs\\Models\\Repository\\ServicoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\ServicoRepository.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\ServicoRepository.cs",
               "RelativeToolTip": "BluServs\\Models\\Repository\\ServicoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -55,11 +68,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AgendamentoDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoDto.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoDto.cs",
               "RelativeDocumentMoniker": "BluServs\\DTOs\\AgendamentoDto.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoDto.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoDto.cs",
               "RelativeToolTip": "BluServs\\DTOs\\AgendamentoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,11 +80,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Agendamento.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
               "RelativeDocumentMoniker": "BluServs\\Models\\Agendamento.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Agendamento.cs",
               "RelativeToolTip": "BluServs\\Models\\Agendamento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -79,11 +92,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AgendamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\AgendamentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\AgendamentoRepository.cs",
               "RelativeDocumentMoniker": "BluServs\\Models\\Repository\\AgendamentoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\AgendamentoRepository.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Models\\Repository\\AgendamentoRepository.cs",
               "RelativeToolTip": "BluServs\\Models\\Repository\\AgendamentoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,24 +104,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AgendamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AgendamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Controllers\\AgendamentoController.cs",
               "RelativeDocumentMoniker": "BluServs\\Controllers\\AgendamentoController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\Controllers\\AgendamentoController.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\Controllers\\AgendamentoController.cs",
               "RelativeToolTip": "BluServs\\Controllers\\AgendamentoController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T19:10:58.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AgendamentoMultiploDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoMultiploDto.cs",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoMultiploDto.cs",
               "RelativeDocumentMoniker": "BluServs\\DTOs\\AgendamentoMultiploDto.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BluServs\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoMultiploDto.cs",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documents\\workspaces\\Passione-Barber\\src\\Server\\BluServs\\BluServs\\DTOs\\AgendamentoMultiploDto.cs",
               "RelativeToolTip": "BluServs\\DTOs\\AgendamentoMultiploDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

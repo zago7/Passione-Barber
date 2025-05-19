@@ -243,31 +243,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BluServs.Controllers.UsuarioController",
-    "Method": "Login",
-    "RelativePath": "api/Usuario/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginData",
-        "Type": "BluServs.Models.Usuario",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BluServs.Models.Usuario",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   }
 ]
