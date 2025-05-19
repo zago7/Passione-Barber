@@ -9,8 +9,6 @@ import { CommonModule } from '@angular/common';
 import { ModalService } from '../../Services/modal.service';
 import { ModalComponent } from '../../components/modal/modal.component';
 
-
-
 @Component({
   selector: 'app-home',
   standalone: true,

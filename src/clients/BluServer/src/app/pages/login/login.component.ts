@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { error } from 'console';
 import { AuthService } from '../../Services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -17,17 +18,16 @@ export class LoginComponent {
   email: string = "";
   senha: string = "";
 
-  constructor(private router: Router , private authService: AuthService) { }
+  constructor(private router: Router , private authService: AuthService, private toastr: ToastrService) { }
 
   login() {
   this.authService.login(this.email, this.senha).subscribe({
     next: usuario => {
-      alert('Login realizado com sucesso!');
-      alert(usuario.id);
+      this.toastr.success('Login realizado com sucesso!');
       this.router.navigate(['/home']);
     },
     error: err => {
-      alert(err.error.mensagem || 'Erro ao fazer login.');
+      this.toastr.error(err.error.mensagem || 'Erro ao fazer login.');
     }
   });
 }

@@ -6,3 +6,11 @@ body{
   
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#toast-container {
+  position: fixed !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 15000 !important; /* maior que o modal */
+  pointer-events: auto !important;
+}

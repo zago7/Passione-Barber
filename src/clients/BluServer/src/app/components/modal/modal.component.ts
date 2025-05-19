@@ -4,6 +4,7 @@ import { Agendamento, AgendamentoService } from '../../Services/agendamento.serv
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from '../../Services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-modal',
@@ -33,7 +34,8 @@ export class ModalComponent implements OnInit {
   constructor(
     private modalService: ModalService,
     private agendamentoService: AgendamentoService,
-    private authService: AuthService
+    private authService: AuthService,
+    private toastr: ToastrService
   ) {
     this.modalService.modalAberto$.subscribe((aberto) => {
       this.modalAberto = aberto;
@@ -45,6 +47,7 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
     this.usuarioId = this.authService.getUsuarioId();
   }
+  
 
   gerarHorarios() {
     const horarios: string[] = [];
@@ -86,37 +89,49 @@ export class ModalComponent implements OnInit {
       .map(s => s.id);
 
     if (servicosIds.length === 0) {
-      alert('Selecione pelo menos um serviço!');
+      this.toastr.warning('Selecione pelo menos um serviço!');
       return;
     }
 
     if (!this.dataSelecionada || !this.horarioSelecionado) {
-      alert('Selecione uma data e horário!');
+      this.toastr.warning('Selecione uma data e horário!');
       return;
     }
 
-    const dataHora = new Date(`${this.dataSelecionada}T${this.horarioSelecionado}`).toISOString();
+    const dataHoraCompleta = new Date(`${this.dataSelecionada}T${this.horarioSelecionado}`);
+    const agora = new Date();
 
-
-    if (this.usuarioId !== null) {
-      this.agendamentoService.criarAgendamentosMultiplos(
-        servicosIds,
-        this.usuarioId,
-        dataHora
-      ).subscribe({
-        next: (agendamentos) => {
-          alert(`serviço(s) agendado(s) com sucesso!`);
-          this.fecharModal();
-        },
-        error: (err) => {
-          console.error(err);
-          alert('Erro ao salvar agendamentos: ' + (err.error?.mensagem || err.message));
-        }
-      });
-    } else {
-      alert('Usuário não está logado. Por favor, faça login para fazer um agendamento.');
+    if (dataHoraCompleta < agora) {
+      this.toastr.warning('Você não pode selecionar uma data e horário anteriores ao momento atual.');
+      return;
     }
+
+    if (!this.authService.isLogado()) {
+      this.toastr.warning('Você precisa estar logado para agendar.');
+      this.fecharModal();
+      return;
+    }
+
+    const dataHoraISO = dataHoraCompleta.toISOString();
+
+    const usuarioId = this.authService.getUsuarioId!(); // pega atualizado
+
+    this.agendamentoService.criarAgendamentosMultiplos(
+      servicosIds,
+      usuarioId!,
+      dataHoraISO
+    ).subscribe({
+      next: (agendamentos) => {
+        this.toastr.success('Serviço(s) agendado(s) com sucesso!');
+        this.fecharModal();
+      },
+      error: (err) => {
+        console.error(err);
+        this.toastr.error('Erro ao salvar agendamentos: ' + (err.error?.mensagem || err.message));
+      }
+    });
   }
+
 }
 
 

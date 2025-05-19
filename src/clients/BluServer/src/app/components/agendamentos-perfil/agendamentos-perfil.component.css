@@ -1,10 +1,23 @@
 .agendamentos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
-  color: #fff;
+  color: #000;
 }
 
-.agendamento-item {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ffc107;
-  padding-bottom: 10px;
+.agendamento-card {
+  background-color: #ffc107; /* Amarelo */
+  color: #000; /* Texto preto para contraste */
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.titulo {
+  align-items: center;
+  color: white;
 }

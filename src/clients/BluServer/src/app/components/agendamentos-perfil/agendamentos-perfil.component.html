@@ -1,4 +1,5 @@
 <div class="agendamentos-container" *ngIf="agendamentos.length > 0; else nenhumAgendamento">
+    <h2 class="titulo">Meus Agendamentos</h2>
     <div *ngFor="let agendamento of agendamentos" class="agendamento-card">
         <p><strong>Serviço:</strong> {{ agendamento.servico?.nome }}</p>
         <p><strong>Data:</strong> {{ agendamento.dataHora | date:'dd/MM/yyyy' }}</p>

@@ -27,8 +27,8 @@ export class AuthService {
     }
 
     getUsuarioPorId(id: number): Observable<any> {
-  return this.http.get<any>(`http://localhost:5129/api/usuario/${id}`);
-}
+        return this.http.get<any>(`http://localhost:5129/api/usuario/${id}`);
+    }
 
     login(email: string, senha: string): Observable<any> {
         return this.http.post<{ id: number, nome: string, email: string }>(`${this.loginUrl}/login`, { email, senha })
@@ -41,10 +41,15 @@ export class AuthService {
     }
 
     logout() {
-        localStorage.removeItem('usuarioId'); // ou o que você estiver salvando
+        this.usuarioId = null;
+        localStorage.removeItem('userId'); // nome correto
     }
 
     cadastro(nome: string, email: string, senha: string): Observable<any> {
         return this.http.post(this.cadastroUrl, { nome, email, senha });
+    }
+
+    isLogado(): boolean {
+        return this.usuarioId !== null;
     }
 }
